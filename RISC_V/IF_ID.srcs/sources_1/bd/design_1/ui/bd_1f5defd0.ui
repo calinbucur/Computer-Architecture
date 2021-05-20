@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.752239",
+   "Default View_TopLeft":"-423,-380",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -220 -y -100 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -220 -y -120 -defaultsOSRD
+preplace inst RISC_V_IF_ID_0 -pg 1 -lvl 1 -x 410 -y 70 -defaultsOSRD
+preplace inst control_path_0 -pg 1 -lvl 1 -x 410 -y -260 -defaultsOSRD
+preplace inst ID_EX_0 -pg 1 -lvl 2 -x 870 -y 70 -defaultsOSRD
+preplace netloc clk_0_1 1 0 2 -190 -100 620
+preplace netloc reset_0_1 1 0 2 -200 -90 600
+preplace netloc RISC_V_IF_ID_0_PC_ID 1 1 1 N -30
+preplace netloc RISC_V_IF_ID_0_INSTRUCTION_ID 1 1 1 N -10
+preplace netloc RISC_V_IF_ID_0_IMM_ID 1 1 1 N 10
+preplace netloc RISC_V_IF_ID_0_REG_DATA1_ID 1 1 1 N 30
+preplace netloc RISC_V_IF_ID_0_REG_DATA2_ID 1 1 1 N 50
+preplace netloc RISC_V_IF_ID_0_FUNCT3_ID 1 1 1 N 70
+preplace netloc RISC_V_IF_ID_0_FUNCT7_ID 1 1 1 N 90
+preplace netloc RISC_V_IF_ID_0_OPCODE_ID 1 1 1 N 110
+preplace netloc RISC_V_IF_ID_0_RD_ID 1 1 1 N 130
+preplace netloc RISC_V_IF_ID_0_RS1_ID 1 1 1 N 150
+preplace netloc RISC_V_IF_ID_0_RS2_ID 1 1 1 N 170
+preplace netloc control_path_0_MemRead 1 1 1 610 -320n
+levelinfo -pg 1 -220 410 870 1080
+pagesize -pg 1 -db -bbox -sgen -320 -410 1080 660
+"
+}
+

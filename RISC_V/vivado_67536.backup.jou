@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 15 13:52:51 2020
+# Process ID: 67536
+# Current directory: E:/FACS/CN2/Lucrare3/IF_ID
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25328 E:\FACS\CN2\Lucrare3\IF_ID\IF_ID.xpr
+# Log file: E:/FACS/CN2/Lucrare3/IF_ID/vivado.log
+# Journal file: E:/FACS/CN2/Lucrare3/IF_ID\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source RISC_V_TB.tcl
+close_sim
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALUcontrol.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALUcontrol.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALU.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALU.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/EX.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/EX.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/adder.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/adder.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux2_1.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux2_1.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux3_1.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux3_1.v
+update_compile_order -fileset sources_1

@@ -1,0 +1,415 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "RISC_V_IF_ID_0": "",
+      "control_path_0": "",
+      "ID_EX_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "RISC_V_IF_ID_0": {
+        "vlnv": "xilinx.com:module_ref:RISC_V_IF_ID:1.0",
+        "xci_name": "design_1_RISC_V_IF_ID_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RISC_V_IF_ID",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "IF_ID_write": {
+            "direction": "I"
+          },
+          "PCSrc": {
+            "direction": "I"
+          },
+          "PC_write": {
+            "direction": "I"
+          },
+          "PC_Branch": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "RegWrite_WB": {
+            "direction": "I"
+          },
+          "ALU_DATA_WB": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "RD_WB": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "PC_ID": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "INSTRUCTION_ID": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "IMM_ID": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA1_ID": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA2_ID": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "FUNCT3_ID": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "FUNCT7_ID": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "OPCODE_ID": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "RD_ID": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RS1_ID": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RS2_ID": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "control_path_0": {
+        "vlnv": "xilinx.com:module_ref:control_path:1.0",
+        "xci_name": "design_1_control_path_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "control_path",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "opcode": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "control_sel": {
+            "direction": "I"
+          },
+          "MemRead": {
+            "direction": "O"
+          },
+          "MemtoReg": {
+            "direction": "O"
+          },
+          "MemWrite": {
+            "direction": "O"
+          },
+          "RegWrite": {
+            "direction": "O"
+          },
+          "Branch": {
+            "direction": "O"
+          },
+          "ALUSrc": {
+            "direction": "O"
+          },
+          "ALUop": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "ID_EX_0": {
+        "vlnv": "xilinx.com:module_ref:ID_EX:1.0",
+        "xci_name": "design_1_ID_EX_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ID_EX",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "write": {
+            "direction": "I"
+          },
+          "PC_ID": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "INSTRUCTION_ID": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IMM_ID": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA1_ID": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA2_ID": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "FUNCT3_ID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "FUNCT7_ID": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "OPCODE_ID": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "RD_ID": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "RS1_ID": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "RS2_ID": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "WB_ID": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "M_ID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "EX_ID": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "PC_EX": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "INSTRUCTION_EX": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "IMM_EX": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA1_EX": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "REG_DATA2_EX": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "FUNCT3_EX": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "FUNCT7_EX": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "OPCODE_EX": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "RD_EX": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RS1_EX": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RS2_EX": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "WB_EX": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "M_EX": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "EX_EX": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "RISC_V_IF_ID_0/clk",
+          "ID_EX_0/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "RISC_V_IF_ID_0/reset",
+          "ID_EX_0/reset"
+        ]
+      },
+      "RISC_V_IF_ID_0_PC_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/PC_ID",
+          "ID_EX_0/PC_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_INSTRUCTION_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/INSTRUCTION_ID",
+          "ID_EX_0/INSTRUCTION_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_IMM_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/IMM_ID",
+          "ID_EX_0/IMM_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_REG_DATA1_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/REG_DATA1_ID",
+          "ID_EX_0/REG_DATA1_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_REG_DATA2_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/REG_DATA2_ID",
+          "ID_EX_0/REG_DATA2_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_FUNCT3_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/FUNCT3_ID",
+          "ID_EX_0/FUNCT3_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_FUNCT7_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/FUNCT7_ID",
+          "ID_EX_0/FUNCT7_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_OPCODE_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/OPCODE_ID",
+          "ID_EX_0/OPCODE_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_RD_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/RD_ID",
+          "ID_EX_0/RD_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_RS1_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/RS1_ID",
+          "ID_EX_0/RS1_ID"
+        ]
+      },
+      "RISC_V_IF_ID_0_RS2_ID": {
+        "ports": [
+          "RISC_V_IF_ID_0/RS2_ID",
+          "ID_EX_0/RS2_ID"
+        ]
+      }
+    }
+  }
+}

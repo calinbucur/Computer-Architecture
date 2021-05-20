@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 15 13:52:51 2020
+# Process ID: 67536
+# Current directory: E:/FACS/CN2/Lucrare3/IF_ID
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25328 E:\FACS\CN2\Lucrare3\IF_ID\IF_ID.xpr
+# Log file: E:/FACS/CN2/Lucrare3/IF_ID/vivado.log
+# Journal file: E:/FACS/CN2/Lucrare3/IF_ID\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.xpr
+INFO: [Project 1-313] Project file moved from '/home/rares/Documents/RISC-V/IF_ID' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 718.844 ; gain = 79.016
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC_V_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/code.mem'
+INFO: [SIM-utils-43] Exported 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_V_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/if_id_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/mux2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/imports/IF_ID/risc_v.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sim_1/new/test_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim'
+"xelab -wto bb560ed3935d47718a06097adf9806b4 --incr --debug all --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_V_TB_behav xil_defaultlib.RISC_V_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto bb560ed3935d47718a06097adf9806b4 --incr --debug all --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_V_TB_behav xil_defaultlib.RISC_V_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2_1
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID_reg
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.RISC_V_IF_ID
+Compiling module xil_defaultlib.RISC_V_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_V_TB_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/xsim.dir/RISC_V_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim/xsim.dir/RISC_V_TB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 15 14:08:37 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 15 14:08:37 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 750.316 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISC_V_TB_behav -key {Behavioral:sim_1:Functional:RISC_V_TB} -tclbatch {RISC_V_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source RISC_V_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 210 ns : File "E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sim_1/new/test_riscv.v" Line 54
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 798.570 ; gain = 48.254
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RISC_V_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 798.570 ; gain = 48.254
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 808.180 ; gain = 9.609
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALUcontrol.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALUcontrol.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALU.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/ALU.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/EX.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/EX.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/adder.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/adder.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux2_1.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux2_1.v
+update_compile_order -fileset sources_1
+close [ open E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux3_1.v w ]
+add_files E:/FACS/CN2/Lucrare3/IF_ID/IF_ID.srcs/sources_1/new/mux3_1.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 16:34:39 2020...
